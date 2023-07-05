@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.wrapper {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.front-square {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    height: 595px;
+    border-radius: 15px;
+    box-shadow: 0px 25px 20px 20px hsl(217, 54%, 10%),0px 20px 20px 50px hsl(217, 62%, 11%);
+}
+
+.picture {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.overlay {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: hsl(178, 100%, 50%);
+
+}
+
+.picture-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.picture-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.picture:hover .overlay {
+    opacity: 0.5;
+}
+
+.picture:hover .picture-icon {
+    opacity: 1;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    margin-left: 25px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p.main {
+    font-family: 'Outfit', sans-serif;
+    margin-left: 25px;
+    font-size: 18px;
+    color: #7B90AB;
+    line-height: 1.6rem;
+}
+
+.ethertime {
+    margin-top: -10px;
+}
+
+.ether {
+    display: flex; 
+    align-items: center;
+    justify-content: left;
+    margin-left: 25px;
+
+}
+
+.ether-text {
+    font-family: 'Outfit', sans-serif;
+    color: hsl(178, 100%, 50%);
+    margin-left: 7px;
+    font-weight: 600;
+}
+
+.time {
+    display: flex; 
+    align-items: center;
+    justify-content: right;
+    margin-left: 110px;
+}
+
+.time-text {
+    font-family: 'Outfit', sans-serif;
+    color: #7B90AB;
+    margin-left: 7px;
+    font-weight: 400;
+}
+
+.line {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-inline: 25px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+
+.avatar-align {
+    display: flex; 
+    align-items: center;
+    justify-content: left;
+}
+
+.avatar {
+    border-radius: 50%;
+    outline: 1px solid hsl(0, 0%, 100%);
+    width: 31px;
+    height: 31px;
+    margin-left: 25px;
+  }
+
+.creation {
+    font-family: 'Outfit', sans-serif;
+    color: #7B90AB;
+    font-size: 1rem;
+    margin-left: 17px;
+}
+
+.jules {
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.jules:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
